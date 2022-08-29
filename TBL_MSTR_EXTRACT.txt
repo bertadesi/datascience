@@ -1,0 +1,9 @@
+CREATE TABLE `tbl_master_extract` (
+  `idtbl_master_extract` int NOT NULL AUTO_INCREMENT,
+  `from_email` varchar(200) DEFAULT NULL,
+  `to_email` varchar(200) DEFAULT NULL,
+  `subject` varchar(200) DEFAULT NULL,
+  `body` text,
+  `receive_date` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`idtbl_master_extract`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
