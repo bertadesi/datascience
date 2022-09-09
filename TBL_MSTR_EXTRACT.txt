@@ -7,3 +7,16 @@ CREATE TABLE `tbl_master_extract` (
   `receive_date` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`idtbl_master_extract`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+================================with amount & category =================================
+CREATE TABLE `tbl_master_extract` (
+  `idtbl_master_extract` int NOT NULL AUTO_INCREMENT,
+  `from_email` varchar(200) DEFAULT NULL,
+  `to_email` varchar(200) DEFAULT NULL,
+  `subject` varchar(1000) DEFAULT NULL,
+  `body` blob,
+  `receive_date` varchar(50) DEFAULT NULL,
+  `category` varchar(100) DEFAULT NULL,
+  `amount` int DEFAULT NULL,
+  PRIMARY KEY (`idtbl_master_extract`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
